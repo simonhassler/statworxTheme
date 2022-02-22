@@ -11,4 +11,5 @@ LazyData: true
 Depends:
   ggplot2 (>= 3.0.0)
 RoxygenNote: 7.1.2
-
+URL: https://github.com/simonhassler/statworxTheme
+BugReports: https://github.com/simonhassler/statworxTheme/issues
