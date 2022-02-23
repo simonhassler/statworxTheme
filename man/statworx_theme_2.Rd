@@ -11,7 +11,11 @@ Sets a pre-defined theme as the standard ggplot theme via
 \code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_minimal}}
 }
 \examples{
+\dontrun{
+library(statworxTheme)
+statworx_theme_2()
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
-geom_point() +  statworx_theme_2()
+geom_point()
+}
 }
 \keyword{theme}

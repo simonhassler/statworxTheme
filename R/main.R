@@ -4,10 +4,12 @@
 #' @keywords theme
 #' @export
 #' @examples
+#' \dontrun{
+#' library(statworxTheme)
 #' statworx_theme_1()
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 #' geom_point()
-#'
+#' }
 statworx_theme_1 <- function(){
 
   font <- "Arial"   #assign font family up front
@@ -71,10 +73,12 @@ statworx_theme_1 <- function(){
 #' @keywords theme
 #' @export
 #' @examples
+#' \dontrun{
+#' library(statworxTheme)
 #' statworx_theme_2()
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 #' geom_point()
-
+#' }
 statworx_theme_2 <- function(){
 
   font <- "Arial"   #assign font family up front
