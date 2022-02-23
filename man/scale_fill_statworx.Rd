@@ -30,7 +30,8 @@ Scale constructor for ggplot.
 Create a constructor for ggplot for box plots, bar plots, etc.
 }
 \examples{
-ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +   geom_point() +  scale_fill_statworx()
+ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+geom_point() +  scale_fill_statworx()
 
 }
 \keyword{scale_fill_statworx()}

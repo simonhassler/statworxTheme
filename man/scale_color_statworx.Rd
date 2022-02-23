@@ -30,7 +30,8 @@ Scale constructor for ggplot.
 Create a constructor for ggplot for lines, points, etc.
 }
 \examples{
-ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +   geom_point() + scale_color_statworx()
+ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+geom_point() + scale_color_statworx()
 
 }
 \keyword{scale_color_statworx()}

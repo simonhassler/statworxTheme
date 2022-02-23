@@ -17,6 +17,8 @@ create_statworx_palette(
 \item{reverse}{If true, order of palette is reversed.}
 
 \item{col_list}{Provide a vector of colors if @param palette = "custom".}
+
+\item{...}{arguments passed to \code{\link[grDevices]{colorRampPalette}}}
 }
 \value{
 Palette generating function based on "colorRampPalette".

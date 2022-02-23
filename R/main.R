@@ -4,7 +4,8 @@
 #' @keywords theme
 #' @export
 #' @examples
-#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +   geom_point() +  statworx_theme_1()
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#' geom_point() +  statworx_theme_1()
 #'
 statworx_theme_1 <- function(){
 
@@ -67,10 +68,10 @@ statworx_theme_1 <- function(){
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_minimal}}
 #' @keywords theme
-#' @inheritParams ggplot2::theme_minimal
 #' @export
 #' @examples
-#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +   geom_point() +  statworx_theme_2()
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#' geom_point() +  statworx_theme_2()
 
 statworx_theme_2 <- function(){
 
@@ -175,7 +176,7 @@ create_color_vector <- function(colors = statworx_colors, ...) {
   colors[cols]
 }
 
-
+#' @description Vector of color codes.
 #' @export
 # Make list of different palettes
 statworx_palettes <- list(
@@ -189,7 +190,7 @@ statworx_palettes <- list(
 
 
 #' Create a color palette function.
-#'
+#' @param ... arguments passed to \code{\link[grDevices]{colorRampPalette}}
 #' @param palette A color palette or "custom".
 #' @param reverse If true, order of palette is reversed.
 #' @param col_list Provide a vector of colors if @param palette = "custom".
@@ -225,7 +226,8 @@ create_statworx_palette <- function(palette = "statworx_palette",
 #' @keywords scale_color_statworx()
 #' @export
 #' @examples
-#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +   geom_point() + scale_color_statworx()
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#' geom_point() + scale_color_statworx()
 #'
 scale_color_statworx <- function(palette = "statworx_palette", discrete = TRUE,
                                  reverse = FALSE, col_list = c(), ...) {
@@ -251,7 +253,8 @@ scale_color_statworx <- function(palette = "statworx_palette", discrete = TRUE,
 #' @keywords scale_fill_statworx()
 #' @export
 #' @examples
-#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +   geom_point() +  scale_fill_statworx()
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#' geom_point() +  scale_fill_statworx()
 #'
 scale_fill_statworx <- function(palette = "statworx_palette", discrete = TRUE,
                                 reverse = FALSE, col_list = c(), ...) {
