@@ -1,9 +1,9 @@
 Package: statworxTheme
 Type: Package
-Title: Themes For Company
+Title: Unofficial Theme of statworx
 Version: 0.1.0
 Author: Simon Hassler <yourself@somewhere.net>
-Maintainer: Simon Hassler <yourself@somewhere.net>
+Maintainer: Simon Hassler <simon.hassler@statworx.com>
 Description: Provides several themes for ggplot.
 License: GPL-3
 Encoding: UTF-8
