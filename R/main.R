@@ -26,7 +26,7 @@ statworx_theme_1 <- function(){
     #text elements
     plot.title = element_text(
       family = font,
-      colour = "#0000FF",
+      colour = statworx_cols("Tech Blue"),
       size = 20,
       face = 'bold',
       hjust = 0,
