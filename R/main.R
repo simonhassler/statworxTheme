@@ -2,7 +2,6 @@
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_classic}}
 #' @keywords theme
-#' @inheritParams ggplot2::theme_classic
 #' @export
 #' @examples
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +   geom_point() +  statworx_theme_1()
@@ -26,7 +25,7 @@ statworx_theme_1 <- function(){
     #text elements
     plot.title = element_text(
       family = font,
-      colour = statworx_cols("Tech Blue"),
+      colour = "#0000FF",
       size = 20,
       face = 'bold',
       hjust = 0,
