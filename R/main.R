@@ -4,8 +4,9 @@
 #' @keywords theme
 #' @export
 #' @examples
+#' statworx_theme_1()
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
-#' geom_point() +  statworx_theme_1()
+#' geom_point()
 #'
 statworx_theme_1 <- function(){
 
@@ -70,8 +71,9 @@ statworx_theme_1 <- function(){
 #' @keywords theme
 #' @export
 #' @examples
+#' statworx_theme_2()
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
-#' geom_point() +  statworx_theme_2()
+#' geom_point()
 
 statworx_theme_2 <- function(){
 
