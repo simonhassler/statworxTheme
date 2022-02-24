@@ -2,7 +2,7 @@
 % Please edit documentation in R/main.R
 \name{statworx_grey2}
 \alias{statworx_grey2}
-\title{statworx Theme based on theme_minimal}
+\title{statworx Theme based on theme_classic}
 \usage{
 statworx_grey2()
 }
