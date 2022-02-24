@@ -6,11 +6,11 @@
 #' @examples
 #' \dontrun{
 #' library(statworxTheme)
-#' statworx_theme_1()
+#' statworx_classic()
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 #' geom_point()
 #' }
-statworx_theme_1 <- function(){
+statworx_classic <- function(){
 
   font <- "Arial"   #assign font family up front
 
@@ -75,11 +75,11 @@ statworx_theme_1 <- function(){
 #' @examples
 #' \dontrun{
 #' library(statworxTheme)
-#' statworx_theme_2()
+#' statworx_minimal()
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 #' geom_point()
 #' }
-statworx_theme_2 <- function(){
+statworx_minimal <- function(){
 
   font <- "Arial"   #assign font family up front
 
@@ -91,8 +91,8 @@ statworx_theme_2 <- function(){
     panel.grid.minor.x = element_blank(),
     panel.grid.minor.y = element_blank(),
     #axis.line = element_line(color = statworx_cols("grey_1")),
-    axis.ticks.x = element_line(colour = "#283440"),
-    axis.ticks.y = element_line(colour = "#283440"),
+    axis.ticks.x = element_line(colour = "#EBF0F2"),
+    axis.ticks.y = element_line(colour = "#EBF0F2"),
 
 
 
@@ -134,6 +134,217 @@ statworx_theme_2 <- function(){
     #since the legend often requires manual tweaking
     #based on plot content, don't define it here
   )
+
+}
+
+#' statworx Theme based on theme_minimal
+#' @description Sets a pre-defined theme as the standard ggplot theme via
+#' \code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_minimal}}
+#' @keywords theme
+#' @export
+#' @examples
+#' \dontrun{
+#' library(statworxTheme)
+#' statworx_grey1()
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#' geom_point()
+#' }
+statworx_grey1 <- function(){
+
+  font <- "Arial"   #assign font family up front
+
+  theme_set(theme_minimal())
+
+  theme_replace(
+
+    #grid elements
+    panel.grid.major = element_line(colour = "#B6BDCC", size = 0.2),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    plot.background = element_rect(fill = "#EBF0F2"),
+    axis.ticks.x = element_line(colour = "#EBF0F2"),
+    axis.ticks.y = element_line(colour = "#EBF0F2"),
+
+
+
+    #text elements
+    plot.title = element_text(
+      family = font,
+      colour = "#000000",
+      size = 20),
+
+    plot.subtitle = element_text(
+      family = font,
+      colour = "#0000FF",
+      size = 12),
+
+    plot.caption = element_text(
+      family = font,
+      colour = "#283440",
+      size = 9,
+      hjust = 1),
+
+    axis.title = element_text(
+      family = font,
+      face = "bold",
+      colour = "#000000",
+      size = 11),
+
+    axis.text = element_text(
+      colour = "#283440",
+      family = font,
+      size = 11),
+
+    axis.text.x = element_text(
+      margin=margin(5, b = 10))
+
+    #since the legend often requires manual tweaking
+    #based on plot content, don't define it here
+  )
+
+
+
+}
+
+#' statworx Theme based on theme_minimal
+#' @description Sets a pre-defined theme as the standard ggplot theme via
+#' \code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_minimal}}
+#' @keywords theme
+#' @export
+#' @examples
+#' \dontrun{
+#' library(statworxTheme)
+#' statworx_grey2()
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#' geom_point()
+#' }
+#'
+statworx_grey2 <- function(){
+
+  font <- "Arial"   #assign font family up front
+
+  theme_set(theme_classic())
+
+  theme_replace(
+
+    #grid elements
+    panel.grid.major = element_line(colour = "#B6BDCC", linetype = "dashed",
+                                    size = 0.2),
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(fill = "#EBF0F2", color = "#EBF0F2"),
+    plot.background = element_rect(fill = "#EBF0F2"),
+    axis.ticks.x = element_line(colour = "#283440"),
+    axis.ticks.y = element_line(colour = "#283440"),
+
+
+
+    #text elements
+    plot.title = element_text(
+      family = font,
+      colour = "#0000FF",
+      size = 20,
+      face = 'bold'),
+
+    plot.subtitle = element_text(
+      family = font,
+      colour = "#000000",
+      size = 14),
+
+    plot.caption = element_text(
+      family = font,
+      colour = "#283440",
+      size = 9,
+      hjust = 1),
+
+    axis.title = element_text(
+      family = font,
+      colour = "#000000",
+      size = 11),
+
+    axis.text = element_text(
+      colour = "#283440",
+      family = font,
+      size = 11),
+    legend.background = element_rect(fill= "#EBF0F2", colour = "#EBF0F2"),
+
+    axis.text.x = element_text(
+      margin=margin(5, b = 10))
+
+    #since the legend often requires manual tweaking
+    #based on plot content, don't define it here
+  )
+
+
+
+}
+
+#' statworx Theme based on theme_classic
+#' @description Sets a pre-defined theme as the standard ggplot theme via
+#' \code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @keywords theme
+#' @export
+#' @examples
+#' \dontrun{
+#' library(statworxTheme)
+#' statworx_scientific()
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#' geom_point()
+#' }
+statworx_scientific <- function(){
+
+  font <- "Arial"   #assign font family up front
+
+  theme_set(theme_classic())
+
+  theme_replace(
+
+    #grid elements
+    panel.grid.major = element_line(colour = "#B6BDCC", linetype = "dashed",
+                                    size = 0.2),
+    panel.grid.minor = element_blank(),
+    axis.ticks.x = element_line(colour = "#B6BDCC"),
+    axis.ticks.y = element_line(colour = "#B6BDCC"),
+
+
+
+    #text elements
+    plot.title = element_text(
+      family = font,
+      colour = "#000000",
+      size = 20,
+      face = 'bold'),
+
+    plot.subtitle = element_text(
+      family = font,
+      colour = "#000000",
+      size = 14),
+
+    plot.caption = element_text(
+      family = font,
+      colour = "#283440",
+      size = 9,
+      hjust = 1),
+
+    axis.title = element_text(
+      family = font,
+      colour = "#000000",
+      size = 11),
+
+    axis.text = element_text(
+      colour = "#283440",
+      family = font,
+      size = 11),
+
+    axis.line = element_line(color = "#CCCCCC"),
+
+    axis.text.x = element_text(
+      margin=margin(5, b = 10))
+
+    #since the legend often requires manual tweaking
+    #based on plot content, don't define it here
+  )
+
+
 
 }
 
