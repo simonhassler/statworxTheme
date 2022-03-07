@@ -1,6 +1,6 @@
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
-#' \code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' \code{\link[ggplot2:ggtheme]{theme_classic}}
 #' @keywords theme
 #' @export
 #' @examples
@@ -34,7 +34,7 @@ statworx_classic <- function(font = "Arial"){
       family = font,
       colour = "#000000",
       face = 'bold',
-      size = 20,
+      size = 18,
       hjust = 0,
       vjust = 1.5),
 
@@ -70,7 +70,7 @@ statworx_classic <- function(font = "Arial"){
 
 #' statworx Theme based on theme_minimal
 #' @description Sets a pre-defined theme as the standard ggplot theme via
-#' \code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_minimal}}
+#' \code{\link[ggplot2:ggtheme]{theme_minimal}}
 #' @keywords theme
 #' @export
 #' @examples
@@ -103,9 +103,9 @@ statworx_minimal <- function(font = "Arial"){
       family = font,
       colour = "#000000",
       face = 'bold',
-      size = 20,
+      size = 18,
       hjust = 0,
-      vjust = 1.5),
+      vjust = 2),
 
     plot.caption = element_text(
       family = font,
@@ -139,7 +139,7 @@ statworx_minimal <- function(font = "Arial"){
 
 #' statworx Theme based on theme_minimal
 #' @description Sets a pre-defined theme as the standard ggplot theme via
-#' \code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_minimal}}
+#' \code{\link[ggplot2:ggtheme]{theme_minimal}}
 #' @keywords theme
 #' @export
 #' @examples
@@ -165,7 +165,7 @@ statworx_grey1 <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#000000",
-      size = 20),
+      size = 18),
 
     plot.subtitle = element_text(
       family = font,
@@ -202,7 +202,7 @@ statworx_grey1 <- function(font = "Arial"){
 
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
-#' \code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' \code{\link[ggplot2:ggtheme]{theme_classic}}
 #' @keywords theme
 #' @export
 #' @examples
@@ -230,7 +230,7 @@ statworx_grey2 <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#0000FF",
-      size = 20,
+      size = 18,
       face = 'bold'),
 
     plot.subtitle = element_text(
@@ -268,7 +268,7 @@ statworx_grey2 <- function(font = "Arial"){
 
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
-#' \code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' \code{\link[ggplot2:ggtheme]{theme_classic}}
 #' @keywords theme
 #' @export
 #' @examples
@@ -303,9 +303,9 @@ statworx_scientific <- function(font = "Arial"){
       family = font,
       colour = "#000000",
       face = 'bold',
-      size = 20,
+      size = 18,
       hjust = 0,
-      vjust = 1.5),
+      vjust = 2),
 
     plot.caption = element_text(
       family = font,
@@ -338,6 +338,301 @@ statworx_scientific <- function(font = "Arial"){
 
 
 }
+
+#' statworx Theme based on theme_classic
+#' @description Sets a pre-defined theme as the standard ggplot theme via
+#' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @keywords theme
+#' @export
+#' @examples
+#' \dontrun{
+#' library(statworxTheme)
+#' statworx_hc()
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#' geom_point()
+#' }
+
+statworx_hc <- function(font = "Arial"){
+
+  theme_classic() + theme(
+
+    #grid elements
+    panel.background = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid = element_blank(),
+    panel.grid.major.y = element_line(size = .1, color = "#B6BDCC") ,
+    axis.ticks.x = element_line(colour = "#B6BDCC"),
+    axis.ticks.y = element_line(colour = "#B6BDCC"),
+    axis.line.x.bottom = element_line(color = '#B6BDCC'),
+    axis.line.y.left = element_line(color = '#B6BDCC'),
+
+
+    #text elements
+    plot.title = element_text(
+      family = font,
+      colour = "#0000FF",
+      size = 12,
+      hjust = 0,
+      vjust = 5.5),
+
+    plot.subtitle = element_text(
+      family = font,
+      colour = "#000000",
+      face = 'bold',
+      size = 18,
+      hjust = 0,
+      vjust = 2),
+
+    plot.caption = element_text(
+      family = font,
+      colour = "#283440",
+      size = 9,
+      hjust = 1),
+
+    axis.title = element_text(
+      family = font,
+      colour = "#000000",
+      size = 12),
+
+    axis.text = element_text(
+      colour = "#283440",
+      family = font,
+      size = 12),
+
+    axis.text.x = element_text(
+      margin=margin(5, b = 10)),
+
+    axis.text.y = element_text(
+      margin=margin(5, l = 10)),
+
+    plot.margin = margin(5, t = 20),
+
+    legend.text = element_text(size = 12, family = font),
+    legend.title = element_text(size = 12, family = font)
+  )
+
+
+
+}
+
+#' statworx Theme based on theme_classic
+#' @description Sets a pre-defined theme as the standard ggplot theme via
+#' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @keywords theme
+#' @export
+#' @examples
+#' \dontrun{
+#' library(statworxTheme)
+#' statworx_hc2()
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#' geom_point()
+#' }
+
+statworx_hc2 <- function(font = "Arial"){
+
+  theme_classic() + theme(
+
+    #grid elements
+    panel.background = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid = element_blank(),
+    panel.grid.major.y = element_line(size = .1, color = "#B6BDCC") ,
+    axis.ticks.x = element_line(colour = "#B6BDCC"),
+    axis.ticks.y = element_line(colour = "#B6BDCC", size = .1),
+    axis.line.x.bottom = element_line(colour = "#B6BDCC"),
+    axis.line.y.left = element_blank(),
+
+
+    #text elements
+    plot.title = element_text(
+      family = font,
+      colour = "#0000FF",
+      size = 12,
+      hjust = 0,
+      vjust = 5.5),
+
+    plot.subtitle = element_text(
+      family = font,
+      colour = "#000000",
+      face = 'bold',
+      size = 18,
+      hjust = 0,
+      vjust = 2),
+
+    plot.caption = element_text(
+      family = font,
+      colour = "#283440",
+      size = 9,
+      hjust = 1),
+
+    axis.title = element_text(
+      family = font,
+      colour = "#000000",
+      size = 12),
+
+    axis.text = element_text(
+      colour = "#283440",
+      family = font,
+      size = 12),
+
+    axis.text.x = element_text(
+      margin=margin(5, b = 10)),
+
+    axis.text.y = element_text(
+      margin=margin(5, l = 10)),
+
+    plot.margin = margin(5, t = 20),
+
+    legend.text = element_text(size = 12, family = font),
+    legend.title = element_text(size = 12, family = font)
+  )
+
+
+}
+
+
+statworx_dark <- function(font = "Arial"){
+
+  theme_classic() + theme(
+
+    #grid elements
+    plot.background = element_rect(fill = "#000000"),
+    panel.background = element_rect(fill = "#000000"),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid = element_blank(),
+    # axis.title.x.bottom = element_text(colour = "#FFFFFF"),
+    #  axis.title.y.left = element_text(colour = "#FFFFFF"),
+    axis.ticks.x = element_line(colour = "#FFFFFF"),
+    axis.ticks.y = element_line(colour = "#FFFFFF"),
+    axis.line.x.bottom = element_line(colour = "#FFFFFF"),
+    axis.line.y.left = element_line(colour = "#FFFFFF"),
+    #  axis.text.x.bottom = element_text(colour = "#FFFFFF"),
+    #  axis.text.y.left = element_text(colour = "#FFFFFF"),
+
+    #text elements
+    plot.title = element_text(
+      family = font,
+      colour = "#0000FF",
+      size = 12,
+      hjust = 0,
+      vjust = 5.5),
+
+    plot.subtitle = element_text(
+      family = font,
+      colour = "#0000FF",
+      face = 'bold',
+      size = 18,
+      hjust = 0,
+      vjust = 2),
+
+    plot.caption = element_text(
+      family = font,
+      colour = "#283440",
+      size = 9,
+      hjust = 1),
+
+    axis.title = element_text(
+      family = font,
+      colour = "#FFFFFF",
+      size = 12),
+
+    axis.text = element_text(
+      colour = "#FFFFFF",
+      family = font,
+      size = 12),
+
+    axis.text.x = element_text(
+      margin=margin(5, b = 10)),
+
+    axis.text.y = element_text(
+      margin=margin(5, l = 10)),
+
+    plot.margin = margin(5, t = 20),
+
+    legend.text = element_text(size = 12, family = font, colour = "#FFFFFF"),
+    legend.title = element_text(size = 12, family = font, colour = "#FFFFFF"),
+    legend.key = element_rect(fill = "#000000"),
+    legend.background = element_rect(fill= "#000000")
+  )
+
+
+
+}
+
+statworx_dark2 <- function(font = "Arial"){
+
+  theme_classic() + theme(
+
+    #grid elements
+    plot.background = element_rect(fill = "#000000"),
+    panel.background = element_rect(fill = "#000000"),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.major.x = element_line(colour = "#B6BDCC", size = 0.1),
+    panel.grid.major.y = element_line(colour = "#B6BDCC", size = 0.1),
+    axis.ticks.x = element_line(colour = "#B6BDCC", size = 0.1),
+    axis.ticks.y = element_line(colour = "#B6BDCC", size = 0.1),
+    axis.line.x.bottom = element_blank(),
+    axis.line.y.left = element_blank(),
+
+    #axis.line.x.bottom = element_line(colour = "#B6BDCC", size  = 0.3),
+    #axis.line.y.left = element_line(colour = "#B6BDCC", size  = 0.3),
+
+    #text elements
+    plot.title = element_text(
+      family = font,
+      colour = "#0000FF",
+      size = 12,
+      hjust = 0,
+      vjust = 5.5),
+
+    plot.subtitle = element_text(
+      family = font,
+      colour = "#0000FF",
+      face = 'bold',
+      size = 18,
+      hjust = 0,
+      vjust = 2),
+
+    plot.caption = element_text(
+      family = font,
+      colour = "#B6BDCC",
+      size = 9,
+      hjust = 1),
+
+    axis.title = element_text(
+      family = font,
+      colour = "#B6BDCC",
+      size = 12),
+
+    axis.text = element_text(
+      colour = "#B6BDCC",
+      family = font,
+      size = 12),
+
+    axis.text.x = element_text(
+      margin=margin(5, b = 10)),
+
+    axis.text.y = element_text(
+      margin=margin(5, l = 10)),
+
+    plot.margin = margin(5, t = 20),
+
+    legend.text = element_text(size = 12, family = font, colour = "#B6BDCC"),
+    legend.title = element_text(size = 12, family = font, colour = "#B6BDCC"),
+    legend.key = element_rect(fill = "#000000"),
+    legend.background = element_rect(fill= "#000000")
+  )
+
+
+
+}
+
+
+
 
 
 # Define statworx colors
