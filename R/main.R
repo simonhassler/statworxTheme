@@ -30,15 +30,15 @@ statworx_classic <- function(){
     plot.title = element_text(
       family = font,
       colour = "#0000FF",
-      size = 20,
-      face = 'bold',
+      size = 12,
       hjust = 0,
       vjust = 2),
 
     plot.subtitle = element_text(
       family = font,
       colour = "#000000",
-      size = 14,
+      face = 'bold',
+      size = 20,
       hjust = 0,
       vjust = 2),
 
