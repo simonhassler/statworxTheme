@@ -420,7 +420,7 @@ create_statworx_palette <- function(palette = "statworx_palette",
   }
 
   if (palette == "custom") {
-    pal <- statworx_colors[col_list]
+    pal <- col_list
   } else {
     pal <- statworx_palettes[[palette]]
   }
