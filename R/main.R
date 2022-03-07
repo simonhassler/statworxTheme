@@ -10,13 +10,9 @@
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 #' geom_point()
 #' }
-statworx_classic <- function(){
+statworx_classic <- function(font = "Arial"){
 
-  font <- "Arial"   #assign font family up front
-
-  theme_set(theme_classic())
-
-  theme_replace(
+  theme_classic() + theme(
 
     #grid elements
     panel.grid.major = element_blank(),
@@ -32,7 +28,7 @@ statworx_classic <- function(){
       colour = "#0000FF",
       size = 12,
       hjust = 0,
-      vjust = 2),
+      vjust = 5.5),
 
     plot.subtitle = element_text(
       family = font,
@@ -40,7 +36,7 @@ statworx_classic <- function(){
       face = 'bold',
       size = 20,
       hjust = 0,
-      vjust = 2),
+      vjust = 1.5),
 
     plot.caption = element_text(
       family = font,
@@ -51,18 +47,23 @@ statworx_classic <- function(){
     axis.title = element_text(
       family = font,
       colour = "#000000",
-      size = 11),
+      size = 12),
 
     axis.text = element_text(
       colour = "#283440",
       family = font,
-      size = 11),
+      size = 12),
 
     axis.text.x = element_text(
-      margin=margin(5, b = 10))
+      margin=margin(5, b = 10)),
 
-    #since the legend often requires manual tweaking
-    #based on plot content, don't define it here
+    axis.text.y = element_text(
+      margin=margin(5, b = 10)),
+
+    plot.margin = margin(5, t = 20),
+
+    legend.text = element_text(size = 12, family = font),
+    legend.title = element_text(size = 12, family = font)
   )
 
 }
@@ -79,13 +80,9 @@ statworx_classic <- function(){
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 #' geom_point()
 #' }
-statworx_minimal <- function(){
+statworx_minimal <- function(font = "Arial"){
 
-  font <- "Arial"   #assign font family up front
-
-  theme_set(theme_minimal())
-
-  theme_replace(
+  theme_minimal() + theme(
 
     #grid elements
     panel.grid.minor.x = element_blank(),
@@ -94,23 +91,21 @@ statworx_minimal <- function(){
     axis.ticks.x = element_line(colour = "#EBF0F2"),
     axis.ticks.y = element_line(colour = "#EBF0F2"),
 
-
-
     #text elements
     plot.title = element_text(
       family = font,
       colour = "#0000FF",
-      size = 20,
-      face = 'bold',
+      size = 12,
       hjust = 0,
-      vjust = 2),
+      vjust = 5.5),
 
     plot.subtitle = element_text(
       family = font,
       colour = "#000000",
-      size = 14,
+      face = 'bold',
+      size = 20,
       hjust = 0,
-      vjust = 2),
+      vjust = 1.5),
 
     plot.caption = element_text(
       family = font,
@@ -121,18 +116,23 @@ statworx_minimal <- function(){
     axis.title = element_text(
       family = font,
       colour = "#000000",
-      size = 11),
+      size = 12),
 
     axis.text = element_text(
       colour = "#283440",
       family = font,
-      size = 11),
+      size = 12),
 
     axis.text.x = element_text(
-      margin=margin(5, b = 10))
+      margin=margin(5, b = 10)),
 
-    #since the legend often requires manual tweaking
-    #based on plot content, don't define it here
+    axis.text.y = element_text(
+      margin=margin(5, b = 10)),
+
+    plot.margin = margin(5, t = 20),
+
+    legend.text = element_text(size = 12, family = font),
+    legend.title = element_text(size = 12, family = font)
   )
 
 }
@@ -149,13 +149,9 @@ statworx_minimal <- function(){
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 #' geom_point()
 #' }
-statworx_grey1 <- function(){
+statworx_grey1 <- function(font = "Arial"){
 
-  font <- "Arial"   #assign font family up front
-
-  theme_set(theme_minimal())
-
-  theme_replace(
+  theme_minimal() + theme(
 
     #grid elements
     panel.grid.major = element_line(colour = "#B6BDCC", size = 0.2),
@@ -164,8 +160,6 @@ statworx_grey1 <- function(){
     plot.background = element_rect(fill = "#EBF0F2"),
     axis.ticks.x = element_line(colour = "#EBF0F2"),
     axis.ticks.y = element_line(colour = "#EBF0F2"),
-
-
 
     #text elements
     plot.title = element_text(
@@ -219,13 +213,9 @@ statworx_grey1 <- function(){
 #' geom_point()
 #' }
 #'
-statworx_grey2 <- function(){
+statworx_grey2 <- function(font = "Arial"){
 
-  font <- "Arial"   #assign font family up front
-
-  theme_set(theme_classic())
-
-  theme_replace(
+  theme_classic() + theme(
 
     #grid elements
     panel.grid.major = element_line(colour = "#B6BDCC", linetype = "dashed",
@@ -235,8 +225,6 @@ statworx_grey2 <- function(){
     plot.background = element_rect(fill = "#EBF0F2"),
     axis.ticks.x = element_line(colour = "#283440"),
     axis.ticks.y = element_line(colour = "#283440"),
-
-
 
     #text elements
     plot.title = element_text(
@@ -290,13 +278,9 @@ statworx_grey2 <- function(){
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 #' geom_point()
 #' }
-statworx_scientific <- function(){
+statworx_scientific <- function(font = "Arial"){
 
-  font <- "Arial"   #assign font family up front
-
-  theme_set(theme_classic())
-
-  theme_replace(
+  theme_classic() + theme(
 
     #grid elements
     panel.grid.major = element_line(colour = "#B6BDCC", linetype = "dashed",
@@ -310,14 +294,18 @@ statworx_scientific <- function(){
     #text elements
     plot.title = element_text(
       family = font,
-      colour = "#000000",
-      size = 20,
-      face = 'bold'),
+      colour = "#0000FF",
+      size = 12,
+      hjust = 0,
+      vjust = 5.5),
 
     plot.subtitle = element_text(
       family = font,
       colour = "#000000",
-      size = 14),
+      face = 'bold',
+      size = 20,
+      hjust = 0,
+      vjust = 1.5),
 
     plot.caption = element_text(
       family = font,
@@ -328,20 +316,23 @@ statworx_scientific <- function(){
     axis.title = element_text(
       family = font,
       colour = "#000000",
-      size = 11),
+      size = 12),
 
     axis.text = element_text(
       colour = "#283440",
       family = font,
-      size = 11),
-
-    axis.line = element_line(color = "#CCCCCC"),
+      size = 12),
 
     axis.text.x = element_text(
-      margin=margin(5, b = 10))
+      margin=margin(5, b = 10)),
 
-    #since the legend often requires manual tweaking
-    #based on plot content, don't define it here
+    axis.text.y = element_text(
+      margin=margin(5, b = 10)),
+
+    plot.margin = margin(5, t = 20),
+
+    legend.text = element_text(size = 12, family = font),
+    legend.title = element_text(size = 12, family = font)
   )
 
 
