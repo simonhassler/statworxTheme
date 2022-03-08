@@ -289,11 +289,12 @@ statworx_scientific <- function(font = "Arial"){
 
     #grid elements
     panel.grid.major = element_line(colour = "#B6BDCC", linetype = "dashed",
-                                    size = 0.2),
+                                    size = 0.1),
     panel.grid.minor = element_blank(),
     axis.ticks.x = element_line(colour = "#B6BDCC"),
     axis.ticks.y = element_line(colour = "#B6BDCC"),
-
+    axis.ticks.length.x = unit(0.35, "cm"),
+    axis.ticks.length.y = unit(0.35, "cm"),
 
 
     #text elements
@@ -372,7 +373,8 @@ statworx_hc <- function(font = "Arial"){
     axis.ticks.y = element_line(colour = "#B6BDCC"),
     axis.line.x.bottom = element_line(color = '#B6BDCC'),
     axis.line.y.left = element_line(color = '#B6BDCC'),
-
+    axis.ticks.length.x = unit(0.35, "cm"),
+    axis.ticks.length.y = unit(0.35, "cm"),
 
     #text elements
     plot.title = element_text(
