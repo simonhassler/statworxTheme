@@ -27,7 +27,7 @@ statworx_classic <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#0000FF",
-      size = 12,
+      size = 10,
       hjust = 0,
       vjust = 5.5),
 
@@ -97,7 +97,7 @@ statworx_minimal <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#0000FF",
-      size = 12,
+      size = 10,
       hjust = 0,
       vjust = 5.5),
 
@@ -158,10 +158,10 @@ statworx_scientific <- function(font = "Arial"){
 
     #grid elements
     panel.grid.major = element_line(colour = "#B6BDCC", linetype = "dashed",
-                                    size = 0.1),
+                                    size = 0.15),
     panel.grid.minor = element_blank(),
-    axis.ticks.x = element_line(colour = "#B6BDCC", linetype = "dashed",size = 0.1),
-    axis.ticks.y = element_line(colour = "#B6BDCC", linetype = "dashed",size = 0.1),
+    axis.ticks.x = element_line(colour = "#B6BDCC", linetype = "dashed",size = 0.15),
+    axis.ticks.y = element_line(colour = "#B6BDCC", linetype = "dashed",size = 0.15),
     axis.ticks.length.x = unit(0.35, "cm"),
     axis.ticks.length.y = unit(0.35, "cm"),
 
@@ -170,7 +170,7 @@ statworx_scientific <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#0000FF",
-      size = 12,
+      size = 10,
       hjust = 0,
       vjust = 5.5),
 
@@ -249,7 +249,7 @@ statworx_hc <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#0000FF",
-      size = 12,
+      size = 10,
       hjust = 0,
       vjust = 5.5),
 
@@ -327,7 +327,7 @@ statworx_hc2 <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#0000FF",
-      size = 12,
+      size = 10,
       hjust = 0,
       vjust = 5.5),
 
@@ -406,7 +406,7 @@ statworx_modern <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#0000FF",
-      size = 12,
+      size = 10,
       hjust = 0,
       vjust = 5.5),
 
@@ -486,7 +486,7 @@ statworx_dark <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#0000FF",
-      size = 12,
+      size = 10,
       hjust = 0,
       vjust = 5.5),
 
@@ -569,7 +569,7 @@ statworx_dark2 <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#0000FF",
-      size = 12,
+      size = 10,
       hjust = 0,
       vjust = 5.5),
 
@@ -652,7 +652,7 @@ statworx_blue <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#000000",
-      size = 12,
+      size = 10,
       hjust = 0,
       vjust = 5.5),
 
@@ -735,7 +735,7 @@ statworx_blue2 <- function(font = "Arial"){
     plot.title = element_text(
       family = font,
       colour = "#000000",
-      size = 12,
+      size = 10,
       hjust = 0,
       vjust = 5.5),
 
