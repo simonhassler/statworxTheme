@@ -4,11 +4,14 @@
 \alias{statworx_grey2}
 \title{statworx Theme based on theme_classic}
 \usage{
-statworx_grey2()
+statworx_grey2(font = "Arial")
+}
+\arguments{
+\item{font}{set default font}
 }
 \description{
 Sets a pre-defined theme as the standard ggplot theme via
-\code{\link[ggplot2:theme_get]{theme_set}} and \code{\link[ggplot2:ggtheme]{theme_classic}}
+\code{\link[ggplot2:ggtheme]{theme_classic}}
 }
 \examples{
 \dontrun{

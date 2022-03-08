@@ -1,6 +1,7 @@
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
@@ -71,6 +72,7 @@ statworx_classic <- function(font = "Arial"){
 #' statworx Theme based on theme_minimal
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_minimal}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
@@ -140,6 +142,7 @@ statworx_minimal <- function(font = "Arial"){
 #' statworx Theme based on theme_minimal
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_minimal}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
@@ -203,6 +206,7 @@ statworx_grey1 <- function(font = "Arial"){
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
@@ -269,6 +273,7 @@ statworx_grey2 <- function(font = "Arial"){
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
@@ -342,6 +347,7 @@ statworx_scientific <- function(font = "Arial"){
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
@@ -419,6 +425,7 @@ statworx_hc <- function(font = "Arial"){
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
@@ -495,6 +502,7 @@ statworx_hc2 <- function(font = "Arial"){
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
@@ -573,6 +581,7 @@ statworx_modern <- function(font = "Arial"){
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
@@ -655,6 +664,7 @@ statworx_dark <- function(font = "Arial"){
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
@@ -737,6 +747,7 @@ statworx_dark2 <- function(font = "Arial"){
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
@@ -819,6 +830,7 @@ statworx_blue <- function(font = "Arial"){
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_classic}}
+#' @param font set default font
 #' @keywords theme
 #' @export
 #' @examples
