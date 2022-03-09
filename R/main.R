@@ -370,6 +370,81 @@ statworx_hc2 <- function(font = "Arial"){
 
 }
 
+
+#' statworx Theme based on theme_classic
+#' @description Sets a pre-defined theme as the standard ggplot theme via
+#' \code{\link[ggplot2:ggtheme]{theme_bw}}
+#' @param font set default font
+#' @keywords theme
+#' @export
+#' @examples
+#' \dontrun{
+#' library(statworxTheme)
+#' statworx_box()
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#' geom_point()
+#' }
+
+statworx_box <- function(font = "Arial"){
+
+  theme_bw() + theme(
+
+    #grid elements
+    panel.background = element_rect(colour = "#283440", size=0.4),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.ticks.x = element_line(colour = "#283440"),
+    axis.ticks.y = element_line(colour = "#283440"),
+
+
+    #text elements
+    plot.title = element_text(
+      family = font,
+      colour = "#0000FF",
+      size = 10,
+      hjust = 0,
+      vjust = 5.5),
+
+    plot.subtitle = element_text(
+      family = font,
+      colour = "#000000",
+      face = 'bold',
+      size = 18,
+      hjust = 0,
+      vjust = 2),
+
+    plot.caption = element_text(
+      family = font,
+      colour = "#283440",
+      size = 9,
+      hjust = 1),
+
+    axis.title = element_text(
+      family = font,
+      colour = "#000000",
+      size = 12),
+
+    axis.text = element_text(
+      colour = "#283440",
+      family = font,
+      size = 12),
+
+    axis.text.x = element_text(
+      margin=margin(5, b = 10)),
+
+    axis.text.y = element_text(
+      margin=margin(5, b = 10)),
+
+    plot.margin = margin(5, t = 20),
+
+    legend.text = element_text(size = 12, family = font),
+    legend.title = element_text(size = 12, family = font)
+  )
+
+
+
+}
+
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
 #' \code{\link[ggplot2:ggtheme]{theme_classic}}
@@ -448,6 +523,58 @@ statworx_modern <- function(font = "Arial"){
 
 
 }
+
+#' statworx Theme based on theme_classic
+#' @description Sets a pre-defined theme as the standard ggplot theme via
+#' \code{\link[ggplot2:ggtheme]{theme_void}}
+#' @param font set default font
+#' @keywords theme
+#' @export
+#' @examples
+#' \dontrun{
+#' library(statworxTheme)
+#' statworx_void()
+#' ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
+#' geom_point()
+#' }
+#'
+#'
+statworx_void <- function(font = "Arial"){
+
+  theme_void() + theme(
+
+    #text elements
+    plot.title = element_text(
+      family = font,
+      colour = "#0000FF",
+      size = 10,
+      hjust = 0,
+      vjust = 5.5),
+
+    plot.subtitle = element_text(
+      family = font,
+      colour = "#000000",
+      face = 'bold',
+      size = 18,
+      hjust = 0,
+      vjust = 2),
+
+    plot.caption = element_text(
+      family = font,
+      colour = "#283440",
+      size = 9,
+      hjust = 1),
+
+
+    plot.margin = margin(5, t = 20),
+
+    legend.text = element_text(size = 12, family = font),
+    legend.title = element_text(size = 12, family = font)
+  )
+
+
+}
+
 
 #' statworx Theme based on theme_classic
 #' @description Sets a pre-defined theme as the standard ggplot theme via
