@@ -612,14 +612,14 @@ statworx_dark <- function(font = "Arial"){
     #text elements
     plot.title = element_text(
       family = font,
-      colour = "#0000FF",
+      colour = "#FFFFFF",
       size = 10,
       hjust = 0,
       vjust = 5.5),
 
     plot.subtitle = element_text(
       family = font,
-      colour = "#0000FF",
+      colour = "#FFFFFF",
       face = 'bold',
       size = 18,
       hjust = 0,
@@ -695,14 +695,14 @@ statworx_dark2 <- function(font = "Arial"){
     #text elements
     plot.title = element_text(
       family = font,
-      colour = "#0000FF",
+      colour = "#FFFFFF",
       size = 10,
       hjust = 0,
       vjust = 5.5),
 
     plot.subtitle = element_text(
       family = font,
-      colour = "#0000FF",
+      colour = "#FFFFFF",
       face = 'bold',
       size = 18,
       hjust = 0,
@@ -778,14 +778,14 @@ statworx_blue <- function(font = "Arial"){
     #text elements
     plot.title = element_text(
       family = font,
-      colour = "#000000",
+      colour = "#FFFFFF",
       size = 10,
       hjust = 0,
       vjust = 5.5),
 
     plot.subtitle = element_text(
       family = font,
-      colour = "#000000",
+      colour = "#FFFFFF",
       face = 'bold',
       size = 18,
       hjust = 0,
@@ -861,14 +861,14 @@ statworx_blue2 <- function(font = "Arial"){
     #text elements
     plot.title = element_text(
       family = font,
-      colour = "#000000",
+      colour = "#FFFFFF",
       size = 10,
       hjust = 0,
       vjust = 5.5),
 
     plot.subtitle = element_text(
       family = font,
-      colour = "#000000",
+      colour = "#FFFFFF",
       face = 'bold',
       size = 18,
       hjust = 0,
