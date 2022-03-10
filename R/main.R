@@ -848,10 +848,10 @@ statworx_blue2 <- function(font = "Arial"){
     panel.background = element_rect(fill = "#0000FF"),
     panel.grid.minor.x = element_blank(),
     panel.grid.minor.y = element_blank(),
-    panel.grid.major.x = element_line(colour = "#B6BDCC", size = 0.1),
-    panel.grid.major.y = element_line(colour = "#B6BDCC", size = 0.1),
-    axis.ticks.x = element_line(colour = "#B6BDCC", size = 0.1),
-    axis.ticks.y = element_line(colour = "#B6BDCC", size = 0.1),
+    panel.grid.major.x = element_line(colour = "#FFFFFF", size = 0.1),
+    panel.grid.major.y = element_line(colour = "#FFFFFF", size = 0.1),
+    axis.ticks.x = element_line(colour = "#FFFFFF", size = 0.1),
+    axis.ticks.y = element_line(colour = "#FFFFFF", size = 0.1),
     axis.line.x.bottom = element_blank(),
     axis.line.y.left = element_blank(),
 
@@ -882,11 +882,11 @@ statworx_blue2 <- function(font = "Arial"){
 
     axis.title = element_text(
       family = font,
-      colour = "#B6BDCC",
+      colour = "#FFFFFF",
       size = 12),
 
     axis.text = element_text(
-      colour = "#B6BDCC",
+      colour = "#FFFFFF",
       family = font,
       size = 12),
 
@@ -898,8 +898,8 @@ statworx_blue2 <- function(font = "Arial"){
 
     plot.margin = margin(5, t = 20),
 
-    legend.text = element_text(size = 12, family = font, colour = "#B6BDCC"),
-    legend.title = element_text(size = 12, family = font, colour = "#B6BDCC"),
+    legend.text = element_text(size = 12, family = font, colour = "#FFFFFF"),
+    legend.title = element_text(size = 12, family = font, colour = "#FFFFFF"),
     legend.key = element_rect(fill = "#0000FF", colour = "#0000FF"),
     legend.background = element_rect(fill= "#0000FF")
   )
