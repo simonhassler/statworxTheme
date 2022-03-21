@@ -42,8 +42,8 @@ statworx_classic <- function(font = "Arial"){
     plot.caption = element_text(
       family = font,
       colour = "#283440",
-      size = 9,
-      hjust = 1),
+      size = 10,
+      hjust = 0),
 
     axis.title = element_text(
       family = font,
@@ -112,8 +112,8 @@ statworx_minimal <- function(font = "Arial"){
     plot.caption = element_text(
       family = font,
       colour = "#283440",
-      size = 9,
-      hjust = 1),
+      size = 10,
+      hjust = 0),
 
     axis.title = element_text(
       family = font,
@@ -185,8 +185,8 @@ statworx_scientific <- function(font = "Arial"){
     plot.caption = element_text(
       family = font,
       colour = "#283440",
-      size = 9,
-      hjust = 1),
+      size = 10,
+      hjust = 0),
 
     axis.title = element_text(
       family = font,
@@ -264,8 +264,8 @@ statworx_hc <- function(font = "Arial"){
     plot.caption = element_text(
       family = font,
       colour = "#283440",
-      size = 9,
-      hjust = 1),
+      size = 10,
+      hjust = 0),
 
     axis.title = element_text(
       family = font,
@@ -342,8 +342,8 @@ statworx_hc2 <- function(font = "Arial"){
     plot.caption = element_text(
       family = font,
       colour = "#283440",
-      size = 9,
-      hjust = 1),
+      size = 10,
+      hjust = 0),
 
     axis.title = element_text(
       family = font,
@@ -416,8 +416,8 @@ statworx_box <- function(font = "Arial"){
     plot.caption = element_text(
       family = font,
       colour = "#283440",
-      size = 9,
-      hjust = 1),
+      size = 10,
+      hjust = 0),
 
     axis.title = element_text(
       family = font,
@@ -496,8 +496,8 @@ statworx_modern <- function(font = "Arial"){
     plot.caption = element_text(
       family = font,
       colour = "#283440",
-      size = 9,
-      hjust = 1),
+      size = 10,
+      hjust = 0),
 
     axis.title = element_text(
       family = font,
@@ -562,8 +562,8 @@ statworx_void <- function(font = "Arial"){
     plot.caption = element_text(
       family = font,
       colour = "#283440",
-      size = 9,
-      hjust = 1),
+      size = 10,
+      hjust = 0),
 
 
     plot.margin = margin(5, t = 20),
@@ -627,9 +627,9 @@ statworx_dark <- function(font = "Arial"){
 
     plot.caption = element_text(
       family = font,
-      colour = "#283440",
-      size = 9,
-      hjust = 1),
+      colour = "#FFFFFF",
+      size = 10,
+      hjust = 0),
 
     axis.title = element_text(
       family = font,
@@ -711,8 +711,8 @@ statworx_dark2 <- function(font = "Arial"){
     plot.caption = element_text(
       family = font,
       colour = "#B6BDCC",
-      size = 9,
-      hjust = 1),
+      size = 10,
+      hjust = 0),
 
     axis.title = element_text(
       family = font,
@@ -793,9 +793,9 @@ statworx_blue <- function(font = "Arial"){
 
     plot.caption = element_text(
       family = font,
-      colour = "#283440",
-      size = 9,
-      hjust = 1),
+      colour = "#FFFFFF",
+      size = 10,
+      hjust = 0),
 
     axis.title = element_text(
       family = font,
@@ -876,9 +876,9 @@ statworx_blue2 <- function(font = "Arial"){
 
     plot.caption = element_text(
       family = font,
-      colour = "#B6BDCC",
-      size = 9,
-      hjust = 1),
+      colour = "#FFFFFF",
+      size = 10,
+      hjust = 0),
 
     axis.title = element_text(
       family = font,
